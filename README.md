@@ -1,11 +1,50 @@
-# setupCustomEmail
-Guidelines on how to setup customemail@yourdomain with a domain, cloudflare and zoho
+# Custom Email Setup Guide with Cloudflare and Zoho Mail
 
+## Prerequisites
+- A domain name
+- Cloudflare account (optional)
+- Zoho Mail account
+- Gmail account (for sending emails)
 
-Step 1 : Connect your domain to cloudflare by updating the nameserver (cloudflare is not required if you prefer to use the domain provider as default DNS manager)
-Step 2 : Signup to Zoho mail Free version and update the DNS setup given by the zoho mail at the DNS manager. Also add your custom mail eg: hello@example.com
-Step 3 : Go to your Gmail Account > Settings > Account and imports > under send mail as : click on  add another email address
-Step 4 : In the Popup window, give your custom mail hello@example.com > next 
-Step 5 : add the smtp server as mx.zoho.in, username as hello@example.com and password is the password you used to create the zoho mail. > next 
-Step 6 : A verification mail will be received at the zoho mail. click verify link
-Step 7 : good to go now
+## Step-by-Step Setup
+
+### Step 1: Domain DNS Configuration
+- Connect your domain to Cloudflare by updating the nameservers
+- *Note: Cloudflare is optional; you can use your domain provider's DNS management*
+
+### Step 2: Zoho Mail Setup
+1. Sign up for Zoho Mail (Free version)
+2. Update DNS settings provided by Zoho Mail in your DNS manager
+3. Add your custom email address (e.g., hello@example.com)
+
+### Step 3: Gmail Configuration
+1. Open Gmail and go to Settings
+2. Navigate to "Accounts and Import"
+3. Click "Add another email address" under "Send mail as"
+
+### Step 4: Add Custom Email to Gmail
+1. In the popup window, enter your custom email (hello@example.com)
+2. Click "Next"
+
+### Step 5: SMTP Server Configuration
+1. Enter SMTP server details:
+   - SMTP Server: mx.zoho.in
+   - Username: hello@example.com
+   - Password: Your Zoho Mail account password
+2. Click "Next"
+
+### Step 6: Verification
+- Check your Zoho Mail inbox for a verification email
+- Click the verification link
+
+### Step 7: Confirmation
+- Your custom email is now set up and ready to use in Gmail
+
+## Troubleshooting
+- Ensure DNS settings are correctly configured
+- Verify SMTP server details
+- Check spam folder if verification email is not received
+
+## Additional Tips
+- Keep your Zoho Mail account credentials secure
+- Regularly check email forwarding and sending settings
